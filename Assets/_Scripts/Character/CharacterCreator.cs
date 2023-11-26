@@ -70,6 +70,7 @@ namespace _Scripts.Character
 
         private IEnumerator MergeCoroutine()
         {
+            CameraController.Instance.Activate(CameraType.Merge);
             _mushroomChanger.transform.DOMove(_mergePoinTransform.position, _mergeMoveDuration);
             _eggsChanger.transform.DOMove(_mergePoinTransform.position, _mergeMoveDuration);
             _foodChanger.transform.DOMove(_mergePoinTransform.position, _mergeMoveDuration);

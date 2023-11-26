@@ -1,2 +1,2 @@
 Build path: E:/Яндекс игры/Shailushai
-Build number: 46
+Build number: 47

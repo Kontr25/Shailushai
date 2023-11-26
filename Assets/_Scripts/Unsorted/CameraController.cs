@@ -11,6 +11,8 @@ namespace _Scripts.Unsorted
         [SerializeField] private CinemachineVirtualCamera _characterCamera;
         [SerializeField] private CinemachineVirtualCamera _victoryCamera;
         [SerializeField] private CinemachineVirtualCamera _mergeCamera;
+        [SerializeField] private CinemachineVirtualCamera _eggColorCamera;
+        [SerializeField] private CinemachineVirtualCamera _foodCamera;
         [SerializeField] private CinemachineVirtualCamera _eggCamera;
         [SerializeField] private CinemachineVirtualCamera _moverCamera;
 
@@ -48,6 +50,12 @@ namespace _Scripts.Unsorted
                 case CameraType.Mover:
                     _moverCamera.Priority = 10;
                     break;
+                case CameraType.EggColor:
+                    _eggColorCamera.Priority = 10;
+                    break;
+                case CameraType.Food:
+                    _foodCamera.Priority = 10;
+                    break;
             }
         }
 
@@ -58,6 +66,8 @@ namespace _Scripts.Unsorted
             _mergeCamera.Priority = 0;
             _eggCamera.Priority = 0;
             _moverCamera.Priority = 0;
+            _eggColorCamera.Priority = 0;
+            _foodCamera.Priority = 0;
         }
 
         public CinemachineVirtualCamera Camera(CameraType type)
@@ -74,6 +84,10 @@ namespace _Scripts.Unsorted
                     return _characterCamera;
                 case CameraType.Mover:
                     return _moverCamera;
+                case CameraType.EggColor:
+                    return _eggColorCamera;
+                case CameraType.Food:
+                    return _foodCamera;
             }
 
             return null;

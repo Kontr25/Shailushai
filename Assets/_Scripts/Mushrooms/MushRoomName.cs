@@ -23,6 +23,16 @@ namespace _Scripts.Mushrooms
         Pepper = 18,
         Pirate = 19,
         Cylinder = 20,
-        Wizard = 21
+        Wizard = 21,
+        BlueMushrom = 22,
+        LongMushroom = 23,
+        MushRoomSphere = 24,
+        Lisichka = 25,
+        BrownMushroom = 26,
+        RedMushroom = 27,
+        MentolMushroom = 28,
+        TV = 29,
+        Pomni = 30,
+        Camera = 31
     }
 }

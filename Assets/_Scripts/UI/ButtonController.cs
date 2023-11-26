@@ -1,7 +1,9 @@
 using System;
 using _Scripts.Mushrooms;
+using _Scripts.Unsorted;
 using UnityEngine;
 using UnityEngine.UI;
+using CameraType = _Scripts.Unsorted.CameraType;
 
 namespace _Scripts.UI
 {
@@ -51,12 +53,15 @@ namespace _Scripts.UI
             switch (objectChanger.ChangerType)
             {
                 case ObjectChangerType.Mushroom:
+                    CameraController.Instance.Activate(CameraType.Merge);
                     _targetImage.transform.SetParent(_mushRoomButton.transform);
                     break;
                 case ObjectChangerType.Egg:
+                    CameraController.Instance.Activate(CameraType.EggColor);
                     _targetImage.transform.SetParent(_eggButton.transform);
                     break;
                 case ObjectChangerType.Food:
+                    CameraController.Instance.Activate(CameraType.Food);
                     _targetImage.transform.SetParent(_foodButton.transform);
                     break;
             }

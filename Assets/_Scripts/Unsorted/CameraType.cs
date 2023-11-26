@@ -6,6 +6,8 @@ namespace _Scripts.Unsorted
         Egg,
         Character,
         Victory,
-        Mover
+        Mover,
+        EggColor,
+        Food
     }
 }
